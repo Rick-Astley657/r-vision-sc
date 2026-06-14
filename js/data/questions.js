@@ -1,7 +1,7 @@
 /**
  * questions.js
- * Banque MASSIVE de questions couvrant tout le programme ST 4.
- * Génération automatique avec pondération aléatoire.
+ * Banque de questions diversifiée pour la révision ST 4.
+ * Génération manuelle équilibrée.
  */
 
 const QuestionBank = [
@@ -158,6 +158,66 @@ const QuestionBank = [
     {
         "id": "q11",
         "section": "A",
+        "univers": "terre_espace",
+        "type": "multiple_choice",
+        "text": "Quelle conséquence est directement liée à la fonte de la banquise (glace de mer) ?",
+        "explanation": "La banquise flotte déjà, sa fonte ne fait pas monter le niveau de la mer. Cependant, elle détruit l'habitat d'espèces nordiques comme l'ours polaire.",
+        "options": [
+            "Hausse significative du niveau de la mer",
+            "Disparition de l'habitat de l'ours polaire",
+            "Diminution des inondations côtières",
+            "Augmentation de la salinité de l'eau"
+        ],
+        "answer": 1
+    },
+    {
+        "id": "q12",
+        "section": "A",
+        "univers": "terre_espace",
+        "type": "multiple_choice",
+        "text": "Quel facteur ne modifie pas la direction des courants marins de surface ?",
+        "explanation": "La salinité influence les courants de profondeur (thermohaline), pas les courants de surface dirigés par les vents.",
+        "options": [
+            "La rotation de la Terre (force de Coriolis)",
+            "Les vents dominants",
+            "Les continents",
+            "La salinité de l'eau"
+        ],
+        "answer": 3
+    },
+    {
+        "id": "q13",
+        "section": "A",
+        "univers": "terre_espace",
+        "type": "multiple_choice",
+        "text": "Une mine d'or rejette des eaux contaminées aux métaux lourds. Pourquoi les lacs situés en amont de la mine ne sont-ils pas contaminés ?",
+        "explanation": "La topographie (lignes de crête) fait que l'eau d'un bassin versant s'écoule du point le plus haut (amont) vers le point le plus bas (aval).",
+        "options": [
+            "Parce que l'eau s'écoule toujours vers l'aval.",
+            "Parce que les métaux lourds s'évaporent.",
+            "Parce que l'eau coule de l'aval vers l'amont.",
+            "Parce que les poissons filtrent l'eau en amont."
+        ],
+        "answer": 0
+    },
+    {
+        "id": "q14",
+        "section": "A",
+        "univers": "terre_espace",
+        "type": "multiple_choice",
+        "text": "Quel est l'impact de l'agriculture intensive sur les écosystèmes aquatiques ?",
+        "explanation": "Les engrais lessivés par la pluie se retrouvent dans les bassins versants, favorisant la prolifération d'algues (eutrophisation) qui étouffent le lac.",
+        "options": [
+            "Elle favorise la formation de la banquise.",
+            "L'excès d'engrais (phosphates/nitrates) cause l'eutrophisation des lacs.",
+            "Elle diminue la quantité d'eau dans les océans.",
+            "Elle purifie l'eau des rivières."
+        ],
+        "answer": 1
+    },
+    {
+        "id": "q15",
+        "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
         "text": "L'ion B<sup>3+</sup> provient de l'atome de bore (Z=5). Cet ion possède combien de charges positives et négatives ?",
@@ -165,13 +225,13 @@ const QuestionBank = [
         "options": [
             "2 positives, 5 négatives",
             "5 positives, 2 négatives",
-            "5 positives, 8 négatives",
+            "5 positives, 2 négatives",
             "8 positives, 5 négatives"
         ],
         "answer": 1
     },
     {
-        "id": "q12",
+        "id": "q16",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -186,12 +246,12 @@ const QuestionBank = [
         "answer": 0
     },
     {
-        "id": "q13",
+        "id": "q17",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
         "text": "Dans quel circuit l'ampoule s'allume-t-elle ? Le circuit a un interrupteur fermé et un bécher contenant une solution.",
-        "explanation": "KI est un sel (électrolyte) qui se dissocie en ions en solution aqueuse, permettant au courant de circuler. Le cuivre solide ne marche pas si le circuit est coupé par l'eau.",
+        "explanation": "KI est un sel (électrolyte) qui se dissocie en ions en solution aqueuse, permettant au courant de circuler. Le sucre est un non-électrolyte.",
         "options": [
             "Eau pure",
             "Cuivre solide, Cu",
@@ -201,7 +261,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q14",
+        "id": "q18",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -216,7 +276,7 @@ const QuestionBank = [
         "answer": 3
     },
     {
-        "id": "q15",
+        "id": "q19",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -231,7 +291,7 @@ const QuestionBank = [
         "answer": 0
     },
     {
-        "id": "q16",
+        "id": "q20",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -246,7 +306,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q17",
+        "id": "q21",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -261,7 +321,7 @@ const QuestionBank = [
         "answer": 1
     },
     {
-        "id": "q18",
+        "id": "q22",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -276,7 +336,7 @@ const QuestionBank = [
         "answer": 0
     },
     {
-        "id": "q19",
+        "id": "q23",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -291,7 +351,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q20",
+        "id": "q24",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -306,7 +366,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q21",
+        "id": "q25",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -321,7 +381,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q22",
+        "id": "q26",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -336,7 +396,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q23",
+        "id": "q27",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -351,7 +411,7 @@ const QuestionBank = [
         "answer": 1
     },
     {
-        "id": "q24",
+        "id": "q28",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -366,7 +426,7 @@ const QuestionBank = [
         "answer": 0
     },
     {
-        "id": "q25",
+        "id": "q29",
         "section": "A",
         "univers": "materiel",
         "type": "multiple_choice",
@@ -381,7 +441,82 @@ const QuestionBank = [
         "answer": 1
     },
     {
-        "id": "q26",
+        "id": "q30",
+        "section": "A",
+        "univers": "materiel",
+        "type": "multiple_choice",
+        "text": "Si la concentration d'une solution d'eau salée est de 20 g/L, que se passe-t-il si j'évapore la moitié de l'eau ?",
+        "explanation": "L'évaporation retire le solvant mais laisse le soluté. Le volume diminue de moitié, donc la concentration (m/V) double.",
+        "options": [
+            "La concentration reste à 20 g/L",
+            "La concentration diminue à 10 g/L",
+            "La concentration augmente à 40 g/L",
+            "Le sel s'évapore aussi"
+        ],
+        "answer": 2
+    },
+    {
+        "id": "q31",
+        "section": "A",
+        "univers": "materiel",
+        "type": "multiple_choice",
+        "text": "L'azote liquide bout à -196°C. S'agit-il d'un changement physique ou chimique ?",
+        "explanation": "L'ébullition est un changement d'état (physique). La substance reste de l'azote (N<sub>2</sub>).",
+        "options": [
+            "Chimique, car une nouvelle substance est créée.",
+            "Chimique, car c'est irréversible.",
+            "Physique, car c'est un simple changement de phase (liquide à gaz).",
+            "Physique, car l'azote réagit avec l'air."
+        ],
+        "answer": 2
+    },
+    {
+        "id": "q32",
+        "section": "A",
+        "univers": "materiel",
+        "type": "multiple_choice",
+        "text": "L'isotope Carbone-14 diffère du Carbone-12 par :",
+        "explanation": "Des isotopes d'un même élément ont le même nombre de protons (donc le même Z) mais un nombre de neutrons différent.",
+        "options": [
+            "Son nombre de protons",
+            "Son nombre d'électrons",
+            "Son nombre de neutrons",
+            "Son numéro atomique"
+        ],
+        "answer": 2
+    },
+    {
+        "id": "q33",
+        "section": "A",
+        "univers": "materiel",
+        "type": "multiple_choice",
+        "text": "Dans le modèle atomique de Rutherford-Bohr, que représente le numéro de la période (rangée) du tableau périodique ?",
+        "explanation": "La période indique le nombre de couches électroniques (orbites) sur lesquelles sont répartis les électrons.",
+        "options": [
+            "Le nombre de protons",
+            "Le nombre de couches électroniques",
+            "Le nombre d'électrons de valence",
+            "La masse atomique"
+        ],
+        "answer": 1
+    },
+    {
+        "id": "q34",
+        "section": "A",
+        "univers": "materiel",
+        "type": "multiple_choice",
+        "text": "Une cuisinière de 2000 W fonctionne pendant 3 heures. Quelle énergie en kWh a-t-elle consommée ?",
+        "explanation": "E = P x t. Puissance en kW = 2 kW. E = 2 kW x 3 h = 6 kWh.",
+        "options": [
+            "6000 kWh",
+            "6 kWh",
+            "0,6 kWh",
+            "2003 kWh"
+        ],
+        "answer": 1
+    },
+    {
+        "id": "q35",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -396,7 +531,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q27",
+        "id": "q36",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -411,7 +546,7 @@ const QuestionBank = [
         "answer": 1
     },
     {
-        "id": "q28",
+        "id": "q37",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -426,7 +561,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q29",
+        "id": "q38",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -441,7 +576,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q30",
+        "id": "q39",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -456,7 +591,7 @@ const QuestionBank = [
         "answer": 1
     },
     {
-        "id": "q31",
+        "id": "q40",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -471,7 +606,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q32",
+        "id": "q41",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -486,7 +621,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q33",
+        "id": "q42",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -501,7 +636,7 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q34",
+        "id": "q43",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -516,7 +651,7 @@ const QuestionBank = [
         "answer": 1
     },
     {
-        "id": "q35",
+        "id": "q44",
         "section": "A",
         "univers": "technologique",
         "type": "multiple_choice",
@@ -531,7 +666,52 @@ const QuestionBank = [
         "answer": 2
     },
     {
-        "id": "q36",
+        "id": "q45",
+        "section": "A",
+        "univers": "technologique",
+        "type": "multiple_choice",
+        "text": "Le châssis d'une voiture subit le poids de la carrosserie et des passagers. Quelle contrainte mécanique principale subit-il ?",
+        "explanation": "Le poids pousse vers le bas sur le châssis, le soumettant à un écrasement (compression).",
+        "options": [
+            "Traction",
+            "Compression",
+            "Torsion",
+            "Cisaillement"
+        ],
+        "answer": 1
+    },
+    {
+        "id": "q46",
+        "section": "A",
+        "univers": "technologique",
+        "type": "multiple_choice",
+        "text": "Pour assembler de façon permanente des pièces métalliques d'un vélo, on utilise la soudure. Cette liaison est-elle démontable ou indémontable ?",
+        "explanation": "Pour séparer des pièces soudées, il faut briser la soudure ou le métal. La liaison est donc indémontable.",
+        "options": [
+            "Démontable",
+            "Indémontable",
+            "Élastique",
+            "Partielle"
+        ],
+        "answer": 1
+    },
+    {
+        "id": "q47",
+        "section": "A",
+        "univers": "technologique",
+        "type": "multiple_choice",
+        "text": "Quel est l'avantage principal d'un système vis et écrou pour un cric de voiture ?",
+        "explanation": "Le système vis-écrou permet de soulever une lourde charge (translation) en tournant simplement la vis (rotation). De plus, il est généralement irréversible (le poids ne fait pas redescendre le cric).",
+        "options": [
+            "Il permet une rotation rapide.",
+            "Il transforme un mouvement de translation en rotation.",
+            "Il est réversible.",
+            "Il transforme une rotation en translation avec beaucoup de force."
+        ],
+        "answer": 3
+    },
+    {
+        "id": "q48",
         "section": "B",
         "univers": "terre_espace",
         "type": "short_answer",
@@ -543,7 +723,7 @@ const QuestionBank = [
         ]
     },
     {
-        "id": "q37",
+        "id": "q49",
         "section": "B",
         "univers": "materiel",
         "type": "short_answer",
@@ -557,7 +737,7 @@ const QuestionBank = [
         ]
     },
     {
-        "id": "q38",
+        "id": "q50",
         "section": "B",
         "univers": "materiel",
         "type": "short_answer",
@@ -568,7 +748,7 @@ const QuestionBank = [
         ]
     },
     {
-        "id": "q39",
+        "id": "q51",
         "section": "B",
         "univers": "materiel",
         "type": "short_answer",
@@ -579,7 +759,7 @@ const QuestionBank = [
         ]
     },
     {
-        "id": "q40",
+        "id": "q52",
         "section": "B",
         "univers": "materiel",
         "type": "short_answer",
@@ -591,7 +771,19 @@ const QuestionBank = [
         ]
     },
     {
-        "id": "q41",
+        "id": "q53",
+        "section": "B",
+        "univers": "materiel",
+        "type": "short_answer",
+        "text": "À partir du modèle de Bohr-Rutherford, combien de protons possède un atome de Fluor (F) dont le numéro atomique est 9 ? (Inscrire un nombre)",
+        "explanation": "Le numéro atomique (Z) correspond exactement au nombre de protons de l'élément.",
+        "exactMatch": [
+            "9",
+            "neuf"
+        ]
+    },
+    {
+        "id": "q54",
         "section": "B",
         "univers": "technologique",
         "type": "short_answer",
@@ -603,7 +795,7 @@ const QuestionBank = [
         ]
     },
     {
-        "id": "q42",
+        "id": "q55",
         "section": "B",
         "univers": "technologique",
         "type": "short_answer",
@@ -619,7 +811,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Quelle pièce subit directement la force de l'eau pour initier le mouvement du compteur ?",
-        "choices": ["La vitre", "La roue à aubes", "La buse", "Le boîtier"],
+        "choices": [
+            "La vitre",
+            "La roue à aubes",
+            "La buse",
+            "Le boîtier"
+        ],
         "correctChoice": 1,
         "explanation": "L'eau entre par la buse et frappe les pales de la roue à aubes. C'est elle qui amorce tout le mouvement de rotation du compteur."
     },
@@ -629,7 +826,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Dans le sous-ensemble de friction, la petite roue de friction est l'organe moteur. Par rapport à celle-ci, la grande roue de friction subit-elle une augmentation ou une diminution de vitesse ?",
-        "choices": ["Augmentation de vitesse", "Diminution de vitesse", "Même vitesse", "Inversion de vitesse"],
+        "choices": [
+            "Augmentation de vitesse",
+            "Diminution de vitesse",
+            "Même vitesse",
+            "Inversion de vitesse"
+        ],
         "correctChoice": 1,
         "explanation": "Le mouvement passe d'une petite roue (menante) à une grande roue (menée). Comme la menée est plus grande, elle tourne plus lentement : il y a diminution de vitesse."
     },
@@ -639,7 +841,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Quel composant du compteur d'eau remplit la fonction électrique de COMMANDE ?",
-        "choices": ["L'avertisseur sonore", "La pile et son support", "Le micro-interrupteur", "L'aimant"],
+        "choices": [
+            "L'avertisseur sonore",
+            "La pile et son support",
+            "Le micro-interrupteur",
+            "L'aimant"
+        ],
         "correctChoice": 2,
         "explanation": "Le micro-interrupteur s'ouvre et se ferme au passage de l'aimant, permettant de contrôler le passage du courant : c'est la fonction de commande."
     },
@@ -649,7 +856,11 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Le circuit électrique du compteur d'eau est composé d'une source d'énergie, d'un interrupteur et d'un avertisseur sonore reliés par des fils. Ce circuit est-il branché en série ou en parallèle ?",
-        "choices": ["Circuit en parallèle", "Circuit en série", "Circuit mixte"],
+        "choices": [
+            "Circuit en parallèle",
+            "Circuit en série",
+            "Circuit mixte"
+        ],
         "correctChoice": 1,
         "explanation": "Les composants forment une seule boucle unique. Le courant n'a qu'un seul chemin possible : c'est un circuit en série."
     },
@@ -659,7 +870,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Avec le temps, la roue à aubes ne tourne plus librement car son axe est attaqué par la rouille. Quel entretien faut-il effectuer ?",
-        "choices": ["Changer les roues de friction", "Remplacer la pile", "Nettoyer et lubrifier l'axe", "Resserrer les vis du boîtier"],
+        "choices": [
+            "Changer les roues de friction",
+            "Remplacer la pile",
+            "Nettoyer et lubrifier l'axe",
+            "Resserrer les vis du boîtier"
+        ],
         "correctChoice": 2,
         "explanation": "Si un axe rouille, il perd ses propriétés de glissement. L'entretien recommandé est de nettoyer et lubrifier l'axe de rotation."
     },
@@ -669,7 +885,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Quel composant du compteur d'eau assure la fonction électrique d'ALIMENTATION ?",
-        "choices": ["Le micro-interrupteur", "La pile", "L'avertisseur sonore", "L'aimant"],
+        "choices": [
+            "Le micro-interrupteur",
+            "La pile",
+            "L'avertisseur sonore",
+            "L'aimant"
+        ],
         "correctChoice": 1,
         "explanation": "La pile (source de courant) fournit l'énergie électrique nécessaire au fonctionnement du circuit. C'est la fonction d'alimentation."
     },
@@ -679,7 +900,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "L'avertisseur sonore du compteur d'eau transforme l'énergie électrique en une autre forme d'énergie. Laquelle ?",
-        "choices": ["Énergie thermique", "Énergie mécanique", "Énergie sonore", "Énergie lumineuse"],
+        "choices": [
+            "Énergie thermique",
+            "Énergie mécanique",
+            "Énergie sonore",
+            "Énergie lumineuse"
+        ],
         "correctChoice": 2,
         "explanation": "L'avertisseur sonore (buzzer) convertit l'énergie électrique en énergie sonore. C'est la fonction de transformation d'énergie."
     },
@@ -689,7 +915,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Quel type de guidage l'axe de la roue à aubes effectue-t-il ?",
-        "choices": ["Guidage en translation", "Guidage en rotation", "Guidage hélicoïdal", "Aucun guidage"],
+        "choices": [
+            "Guidage en translation",
+            "Guidage en rotation",
+            "Guidage hélicoïdal",
+            "Aucun guidage"
+        ],
         "correctChoice": 1,
         "explanation": "L'axe permet à la roue à aubes de tourner sur elle-même tout en limitant les autres mouvements : c'est un guidage en rotation."
     },
@@ -699,7 +930,10 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "La liaison entre la roue à aubes et son axe est-elle directe ou indirecte ?",
-        "choices": ["Directe (les pièces se touchent)", "Indirecte (un organe de liaison les unit)"],
+        "choices": [
+            "Directe (les pièces se touchent)",
+            "Indirecte (un organe de liaison les unit)"
+        ],
         "correctChoice": 0,
         "explanation": "La roue à aubes est directement en contact avec son axe, sans organe intermédiaire. C'est donc une liaison directe."
     },
@@ -709,7 +943,10 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "La liaison entre les deux roues de friction est-elle démontable ou indémontable ?",
-        "choices": ["Démontable", "Indémontable"],
+        "choices": [
+            "Démontable",
+            "Indémontable"
+        ],
         "correctChoice": 0,
         "explanation": "Les roues de friction sont simplement en contact par pression et peuvent être séparées sans endommager les pièces. C'est une liaison démontable."
     },
@@ -719,7 +956,10 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Le sous-ensemble roues de friction transmet le mouvement de rotation de la petite roue à la grande roue. Quel est le sens de rotation de la grande roue par rapport à la petite ?",
-        "choices": ["Identique (même sens)", "Inverse (sens contraire)"],
+        "choices": [
+            "Identique (même sens)",
+            "Inverse (sens contraire)"
+        ],
         "correctChoice": 1,
         "explanation": "Lorsque deux roues de friction sont en contact direct, elles tournent en sens contraire l'une de l'autre."
     },
@@ -729,7 +969,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "L'aimant est fixé sur la grande roue de friction. Lorsque l'aimant passe devant le micro-interrupteur, que se passe-t-il dans le circuit électrique ?",
-        "choices": ["Le circuit s'ouvre et le courant cesse de circuler", "Le circuit se ferme et le courant circule, activant l'avertisseur", "La pile se recharge", "Le courant change de direction"],
+        "choices": [
+            "Le circuit s'ouvre et le courant cesse de circuler",
+            "Le circuit se ferme et le courant circule, activant l'avertisseur",
+            "La pile se recharge",
+            "Le courant change de direction"
+        ],
         "correctChoice": 1,
         "explanation": "L'aimant active le micro-interrupteur magnétique : le circuit se ferme momentanément, permettant au courant de circuler et à l'avertisseur sonore de produire un son."
     },
@@ -739,7 +984,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Le boîtier du compteur d'eau doit résister à la pression de l'eau sans se déformer. Quelle propriété mécanique est la plus importante pour le matériau du boîtier ?",
-        "choices": ["La malléabilité", "La dureté", "La rigidité", "L'élasticité"],
+        "choices": [
+            "La malléabilité",
+            "La dureté",
+            "La rigidité",
+            "L'élasticité"
+        ],
         "correctChoice": 2,
         "explanation": "Le boîtier doit résister à la pression sans se déformer. La rigidité est la capacité d'un matériau à résister à la déformation sous une charge."
     },
@@ -749,7 +999,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "La vitre du compteur d'eau doit laisser passer la lumière pour voir le compte-tours. De quel type de matériau la vitre est-elle probablement faite ?",
-        "choices": ["Un métal", "Un thermoplastique transparent", "Une céramique", "Un bois composite"],
+        "choices": [
+            "Un métal",
+            "Un thermoplastique transparent",
+            "Une céramique",
+            "Un bois composite"
+        ],
         "correctChoice": 1,
         "explanation": "La vitre est probablement en thermoplastique (ex: polycarbonate) car ce matériau est transparent, léger, résistant aux chocs et imperméable."
     },
@@ -759,7 +1014,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Les vis du compteur d'eau servent à maintenir les pièces ensemble. Quelle caractéristique décrit le mieux la liaison assurée par les vis ?",
-        "choices": ["Indirecte, rigide, démontable", "Directe, rigide, indémontable", "Indirecte, élastique, démontable", "Directe, élastique, indémontable"],
+        "choices": [
+            "Indirecte, rigide, démontable",
+            "Directe, rigide, indémontable",
+            "Indirecte, élastique, démontable",
+            "Directe, élastique, indémontable"
+        ],
         "correctChoice": 0,
         "explanation": "Les vis sont des organes de liaison (indirecte) qui maintiennent les pièces fermement (rigide) et qui peuvent être retirées sans dommage (démontable)."
     },
@@ -784,7 +1044,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Si les roues de friction glissent et ne transmettent plus le mouvement, quel est l'entretien le plus approprié ?",
-        "choices": ["Lubrifier les roues de friction", "Changer les roues de friction ou leurs bandes d'adhérence", "Remplacer la pile", "Resserrer l'axe de la roue à aubes"],
+        "choices": [
+            "Lubrifier les roues de friction",
+            "Changer les roues de friction ou leurs bandes d'adhérence",
+            "Remplacer la pile",
+            "Resserrer l'axe de la roue à aubes"
+        ],
         "correctChoice": 1,
         "explanation": "Si les roues de friction glissent, c'est qu'elles sont usées et n'ont plus assez d'adhérence. Il faut changer les roues ou remplacer la bande d'adhérence. Attention : lubrifier des roues de friction les ferait glisser encore plus !"
     },
@@ -794,7 +1059,12 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Quelle est la fonction de la goupille de blocage dans le compteur d'eau ?",
-        "choices": ["Guider la roue à aubes en rotation", "Bloquer l'axe de la grande roue de friction pour l'empêcher de se déplacer axialement", "Alimenter le circuit électrique", "Transmettre le mouvement de rotation"],
+        "choices": [
+            "Guider la roue à aubes en rotation",
+            "Bloquer l'axe de la grande roue de friction pour l'empêcher de se déplacer axialement",
+            "Alimenter le circuit électrique",
+            "Transmettre le mouvement de rotation"
+        ],
         "correctChoice": 1,
         "explanation": "La goupille de blocage empêche l'axe de sortir de son logement. Elle maintient la position de l'axe en bloquant son mouvement axial."
     },
@@ -804,7 +1074,10 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Le support de l'interrupteur magnétique est fixé au boîtier. Cette liaison permet-elle un mouvement entre le support et le boîtier ?",
-        "choices": ["Oui, c'est une liaison partielle (guidage)", "Non, c'est une liaison complète (aucun mouvement possible)"],
+        "choices": [
+            "Oui, c'est une liaison partielle (guidage)",
+            "Non, c'est une liaison complète (aucun mouvement possible)"
+        ],
         "correctChoice": 1,
         "explanation": "Le support est fixé solidement au boîtier sans possibilité de mouvement. C'est une liaison complète (totale)."
     },
@@ -814,753 +1087,13 @@ const QuestionBank = [
         "univers": "technologique",
         "type": "svg_interactive",
         "text": "Le conduit d'alimentation amène l'eau vers la buse. Quelle contrainte mécanique subit principalement la paroi interne du conduit lorsque l'eau circule sous pression ?",
-        "choices": ["Traction", "Compression", "Torsion", "Cisaillement"],
+        "choices": [
+            "Traction",
+            "Compression",
+            "Torsion",
+            "Cisaillement"
+        ],
         "correctChoice": 1,
         "explanation": "L'eau sous pression pousse contre les parois internes du conduit, ce qui crée une contrainte de compression sur la paroi."
-    },
-    {
-        "id": "proc_ohm_0",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 43 &Omega; et est traversé par un courant de 6 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "258"
-        ],
-        "explanation": "U = R * I. Donc U = 43 * 6 = 258 V."
-    },
-    {
-        "id": "proc_ohm_1",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 48 &Omega; et est traversé par un courant de 10 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "480"
-        ],
-        "explanation": "U = R * I. Donc U = 48 * 10 = 480 V."
-    },
-    {
-        "id": "proc_ohm_2",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 32 &Omega; et est traversé par un courant de 16 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "512"
-        ],
-        "explanation": "U = R * I. Donc U = 32 * 16 = 512 V."
-    },
-    {
-        "id": "proc_ohm_3",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 13 &Omega; et est traversé par un courant de 15 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "195"
-        ],
-        "explanation": "U = R * I. Donc U = 13 * 15 = 195 V."
-    },
-    {
-        "id": "proc_ohm_4",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 39 &Omega; et est traversé par un courant de 6 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "234"
-        ],
-        "explanation": "U = R * I. Donc U = 39 * 6 = 234 V."
-    },
-    {
-        "id": "proc_ohm_5",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 44 &Omega; et est traversé par un courant de 8 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "352"
-        ],
-        "explanation": "U = R * I. Donc U = 44 * 8 = 352 V."
-    },
-    {
-        "id": "proc_ohm_6",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 20 &Omega; et est traversé par un courant de 14 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "280"
-        ],
-        "explanation": "U = R * I. Donc U = 20 * 14 = 280 V."
-    },
-    {
-        "id": "proc_ohm_7",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 15 &Omega; et est traversé par un courant de 9 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "135"
-        ],
-        "explanation": "U = R * I. Donc U = 15 * 9 = 135 V."
-    },
-    {
-        "id": "proc_ohm_8",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 31 &Omega; et est traversé par un courant de 4 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "124"
-        ],
-        "explanation": "U = R * I. Donc U = 31 * 4 = 124 V."
-    },
-    {
-        "id": "proc_ohm_9",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 41 &Omega; et est traversé par un courant de 2 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "82"
-        ],
-        "explanation": "U = R * I. Donc U = 41 * 2 = 82 V."
-    },
-    {
-        "id": "proc_ohm_10",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 24 &Omega; et est traversé par un courant de 10 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "240"
-        ],
-        "explanation": "U = R * I. Donc U = 24 * 10 = 240 V."
-    },
-    {
-        "id": "proc_ohm_11",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 11 &Omega; et est traversé par un courant de 2 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "22"
-        ],
-        "explanation": "U = R * I. Donc U = 11 * 2 = 22 V."
-    },
-    {
-        "id": "proc_ohm_12",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 22 &Omega; et est traversé par un courant de 6 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "132"
-        ],
-        "explanation": "U = R * I. Donc U = 22 * 6 = 132 V."
-    },
-    {
-        "id": "proc_ohm_13",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 44 &Omega; et est traversé par un courant de 16 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "704"
-        ],
-        "explanation": "U = R * I. Donc U = 44 * 16 = 704 V."
-    },
-    {
-        "id": "proc_ohm_14",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 38 &Omega; et est traversé par un courant de 16 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "608"
-        ],
-        "explanation": "U = R * I. Donc U = 38 * 16 = 608 V."
-    },
-    {
-        "id": "proc_ohm_15",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 45 &Omega; et est traversé par un courant de 12 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "540"
-        ],
-        "explanation": "U = R * I. Donc U = 45 * 12 = 540 V."
-    },
-    {
-        "id": "proc_ohm_16",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 57 &Omega; et est traversé par un courant de 14 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "798"
-        ],
-        "explanation": "U = R * I. Donc U = 57 * 14 = 798 V."
-    },
-    {
-        "id": "proc_ohm_17",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 57 &Omega; et est traversé par un courant de 8 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "456"
-        ],
-        "explanation": "U = R * I. Donc U = 57 * 8 = 456 V."
-    },
-    {
-        "id": "proc_ohm_18",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 54 &Omega; et est traversé par un courant de 5 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "270"
-        ],
-        "explanation": "U = R * I. Donc U = 54 * 5 = 270 V."
-    },
-    {
-        "id": "proc_ohm_19",
-        "section": "B",
-        "univers": "materiel",
-        "type": "short_answer",
-        "text": "Un appareil a une résistance de 59 &Omega; et est traversé par un courant de 12 A. Quelle est la tension (V) à ses bornes ? (Inscrire seulement le nombre)",
-        "exactMatch": [
-            "708"
-        ],
-        "explanation": "U = R * I. Donc U = 59 * 12 = 708 V."
-    },
-    {
-        "id": "proc_conc_0",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 200 mL contenant 34 g de soluté ?",
-        "options": [
-            "170.00 g/L",
-            "17.00 g/L",
-            "1700.00 g/L",
-            "0.1700 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.2 L. C = 34 / 0.2 = 170.00 g/L."
-    },
-    {
-        "id": "proc_conc_1",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 400 mL contenant 27 g de soluté ?",
-        "options": [
-            "67.50 g/L",
-            "6.75 g/L",
-            "675.00 g/L",
-            "0.0675 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.4 L. C = 27 / 0.4 = 67.50 g/L."
-    },
-    {
-        "id": "proc_conc_2",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 500 mL contenant 29 g de soluté ?",
-        "options": [
-            "58.00 g/L",
-            "5.80 g/L",
-            "580.00 g/L",
-            "0.0580 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.5 L. C = 29 / 0.5 = 58.00 g/L."
-    },
-    {
-        "id": "proc_conc_3",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 1000 mL contenant 41 g de soluté ?",
-        "options": [
-            "41.00 g/L",
-            "4.10 g/L",
-            "410.00 g/L",
-            "0.0410 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 1 L. C = 41 / 1 = 41.00 g/L."
-    },
-    {
-        "id": "proc_conc_4",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 400 mL contenant 37 g de soluté ?",
-        "options": [
-            "92.50 g/L",
-            "9.25 g/L",
-            "925.00 g/L",
-            "0.0925 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.4 L. C = 37 / 0.4 = 92.50 g/L."
-    },
-    {
-        "id": "proc_conc_5",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 1100 mL contenant 19 g de soluté ?",
-        "options": [
-            "17.27 g/L",
-            "1.73 g/L",
-            "172.73 g/L",
-            "0.0173 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 1.1 L. C = 19 / 1.1 = 17.27 g/L."
-    },
-    {
-        "id": "proc_conc_6",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 800 mL contenant 22 g de soluté ?",
-        "options": [
-            "27.50 g/L",
-            "2.75 g/L",
-            "275.00 g/L",
-            "0.0275 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.8 L. C = 22 / 0.8 = 27.50 g/L."
-    },
-    {
-        "id": "proc_conc_7",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 700 mL contenant 35 g de soluté ?",
-        "options": [
-            "50.00 g/L",
-            "5.00 g/L",
-            "500.00 g/L",
-            "0.0500 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.7 L. C = 35 / 0.7 = 50.00 g/L."
-    },
-    {
-        "id": "proc_conc_8",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 500 mL contenant 21 g de soluté ?",
-        "options": [
-            "42.00 g/L",
-            "4.20 g/L",
-            "420.00 g/L",
-            "0.0420 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.5 L. C = 21 / 0.5 = 42.00 g/L."
-    },
-    {
-        "id": "proc_conc_9",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 1000 mL contenant 9 g de soluté ?",
-        "options": [
-            "9.00 g/L",
-            "0.90 g/L",
-            "90.00 g/L",
-            "0.0090 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 1 L. C = 9 / 1 = 9.00 g/L."
-    },
-    {
-        "id": "proc_conc_10",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 600 mL contenant 32 g de soluté ?",
-        "options": [
-            "53.33 g/L",
-            "5.33 g/L",
-            "533.33 g/L",
-            "0.0533 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.6 L. C = 32 / 0.6 = 53.33 g/L."
-    },
-    {
-        "id": "proc_conc_11",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 200 mL contenant 23 g de soluté ?",
-        "options": [
-            "115.00 g/L",
-            "11.50 g/L",
-            "1150.00 g/L",
-            "0.1150 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.2 L. C = 23 / 0.2 = 115.00 g/L."
-    },
-    {
-        "id": "proc_conc_12",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 900 mL contenant 16 g de soluté ?",
-        "options": [
-            "17.78 g/L",
-            "1.78 g/L",
-            "177.78 g/L",
-            "0.0178 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.9 L. C = 16 / 0.9 = 17.78 g/L."
-    },
-    {
-        "id": "proc_conc_13",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 600 mL contenant 22 g de soluté ?",
-        "options": [
-            "36.67 g/L",
-            "3.67 g/L",
-            "366.67 g/L",
-            "0.0367 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.6 L. C = 22 / 0.6 = 36.67 g/L."
-    },
-    {
-        "id": "proc_conc_14",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 700 mL contenant 16 g de soluté ?",
-        "options": [
-            "22.86 g/L",
-            "2.29 g/L",
-            "228.57 g/L",
-            "0.0229 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.7 L. C = 16 / 0.7 = 22.86 g/L."
-    },
-    {
-        "id": "proc_conc_15",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 400 mL contenant 40 g de soluté ?",
-        "options": [
-            "100.00 g/L",
-            "10.00 g/L",
-            "1000.00 g/L",
-            "0.1000 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.4 L. C = 40 / 0.4 = 100.00 g/L."
-    },
-    {
-        "id": "proc_conc_16",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 600 mL contenant 15 g de soluté ?",
-        "options": [
-            "25.00 g/L",
-            "2.50 g/L",
-            "250.00 g/L",
-            "0.0250 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.6 L. C = 15 / 0.6 = 25.00 g/L."
-    },
-    {
-        "id": "proc_conc_17",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 700 mL contenant 13 g de soluté ?",
-        "options": [
-            "18.57 g/L",
-            "1.86 g/L",
-            "185.71 g/L",
-            "0.0186 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.7 L. C = 13 / 0.7 = 18.57 g/L."
-    },
-    {
-        "id": "proc_conc_18",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 400 mL contenant 36 g de soluté ?",
-        "options": [
-            "90.00 g/L",
-            "9.00 g/L",
-            "900.00 g/L",
-            "0.0900 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.4 L. C = 36 / 0.4 = 90.00 g/L."
-    },
-    {
-        "id": "proc_conc_19",
-        "section": "A",
-        "univers": "materiel",
-        "type": "multiple_choice",
-        "text": "Quelle est la concentration en g/L d'une solution de 800 mL contenant 25 g de soluté ?",
-        "options": [
-            "31.25 g/L",
-            "3.13 g/L",
-            "312.50 g/L",
-            "0.0313 g/L"
-        ],
-        "answer": 0,
-        "explanation": "C = m / V. V en L = 0.8 L. C = 25 / 0.8 = 31.25 g/L."
-    },
-    {
-        "id": "proc_eng_0",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 40 dents et la roue menée a 10 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 4.0",
-            "Elle diminue d'un facteur de 4.0",
-            "Elle augmente d'un facteur de 0.3",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 40 / 10 = 4.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_1",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 50 dents et la roue menée a 30 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 1.7",
-            "Elle diminue d'un facteur de 1.7",
-            "Elle augmente d'un facteur de 0.6",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 50 / 30 = 1.7. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_2",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 50 dents et la roue menée a 20 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 2.5",
-            "Elle diminue d'un facteur de 2.5",
-            "Elle augmente d'un facteur de 0.4",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 50 / 20 = 2.5. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_3",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 30 dents et la roue menée a 30 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 1.0",
-            "Elle diminue d'un facteur de 1.0",
-            "Elle augmente d'un facteur de 1.0",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 30 / 30 = 1.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_4",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 40 dents et la roue menée a 30 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 1.3",
-            "Elle diminue d'un facteur de 1.3",
-            "Elle augmente d'un facteur de 0.8",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 40 / 30 = 1.3. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_5",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 70 dents et la roue menée a 30 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 2.3",
-            "Elle diminue d'un facteur de 2.3",
-            "Elle augmente d'un facteur de 0.4",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 70 / 30 = 2.3. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_6",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 20 dents et la roue menée a 10 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 2.0",
-            "Elle diminue d'un facteur de 2.0",
-            "Elle augmente d'un facteur de 0.5",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 20 / 10 = 2.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_7",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 40 dents et la roue menée a 20 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 2.0",
-            "Elle diminue d'un facteur de 2.0",
-            "Elle augmente d'un facteur de 0.5",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 40 / 20 = 2.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_8",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 40 dents et la roue menée a 20 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 2.0",
-            "Elle diminue d'un facteur de 2.0",
-            "Elle augmente d'un facteur de 0.5",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 40 / 20 = 2.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_9",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 40 dents et la roue menée a 20 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 2.0",
-            "Elle diminue d'un facteur de 2.0",
-            "Elle augmente d'un facteur de 0.5",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 40 / 20 = 2.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_10",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 40 dents et la roue menée a 20 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 2.0",
-            "Elle diminue d'un facteur de 2.0",
-            "Elle augmente d'un facteur de 0.5",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 40 / 20 = 2.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_11",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 60 dents et la roue menée a 20 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 3.0",
-            "Elle diminue d'un facteur de 3.0",
-            "Elle augmente d'un facteur de 0.3",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 60 / 20 = 3.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_12",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 20 dents et la roue menée a 30 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 0.7",
-            "Elle diminue d'un facteur de 0.7",
-            "Elle augmente d'un facteur de 1.5",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 20 / 30 = 0.7. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_13",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 50 dents et la roue menée a 10 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 5.0",
-            "Elle diminue d'un facteur de 5.0",
-            "Elle augmente d'un facteur de 0.2",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 50 / 10 = 5.0. La roue menée, ayant moins de dents, tourne plus vite."
-    },
-    {
-        "id": "proc_eng_14",
-        "section": "A",
-        "univers": "technologique",
-        "type": "multiple_choice",
-        "text": "Dans un système d'engrenage, la roue menante a 50 dents et la roue menée a 10 dents. Que se passe-t-il avec la vitesse de la roue menée ?",
-        "options": [
-            "Elle augmente d'un facteur de 5.0",
-            "Elle diminue d'un facteur de 5.0",
-            "Elle augmente d'un facteur de 0.2",
-            "Elle reste identique"
-        ],
-        "answer": 0,
-        "explanation": "Rapport = Dents menante / Dents menée = 50 / 10 = 5.0. La roue menée, ayant moins de dents, tourne plus vite."
     }
 ];

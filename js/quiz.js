@@ -8,6 +8,22 @@ const QuizEngine = {
     currentIndex: 0,
     userAnswers: [], // Format: { answered: boolean, isCorrect: boolean, selectedValue: any }
     isAnswerSubmited: false,
+    currentMode: null,
+
+    saveState() {
+        if (!this.currentMode) return;
+        const state = {
+            currentQuestions: this.currentQuestions,
+            currentIndex: this.currentIndex,
+            userAnswers: this.userAnswers
+        };
+        localStorage.setItem('quizState_' + this.currentMode, JSON.stringify(state));
+    },
+
+    clearState() {
+        if (!this.currentMode) return;
+        localStorage.removeItem('quizState_' + this.currentMode);
+    },
 
     // Fonction utilitaire pour mélanger un tableau
     shuffleArray(array) {
@@ -21,6 +37,26 @@ const QuizEngine = {
     },
 
     start(mode) {
+        this.currentMode = mode;
+
+        // Tenter de charger l'état sauvegardé
+        const saved = localStorage.getItem('quizState_' + mode);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                // Si la pratique n'est pas terminée, on reprend
+                if (parsed.currentIndex < parsed.currentQuestions.length && parsed.userAnswers.length > 0) {
+                    this.currentQuestions = parsed.currentQuestions;
+                    this.currentIndex = parsed.currentIndex;
+                    this.userAnswers = parsed.userAnswers;
+                    this.renderQuestion();
+                    return;
+                }
+            } catch(e) {
+                console.error('Save data corrupted', e);
+            }
+        }
+
         this.currentIndex = 0;
         this.userAnswers = [];
         this.currentQuestions = [];
@@ -131,7 +167,7 @@ const QuizEngine = {
                 optionsHtml += `
                     <label class="option-label ${baseClass}" id="opt-label-${idx}">
                         <input type="radio" name="q-option" value="${idx}" ${isChecked} ${state.answered ? 'disabled' : ''}>
-                        ${opt}
+                        <span>${opt}</span>
                     </label>
                 `;
             });
@@ -278,6 +314,8 @@ const QuizEngine = {
 
     processFeedback(isCorrect, explanation) {
         this.isAnswerSubmited = true;
+        this.saveState(); // Sauvegarde locale de la progression
+        
         if (isCorrect) AudioEngine.playCorrect();
         else AudioEngine.playIncorrect();
         
@@ -311,6 +349,8 @@ const QuizEngine = {
     },
 
     finish() {
+        this.clearState(); // Efface la sauvegarde car le quiz est terminé
+        
         const storageResults = this.currentQuestions.map((q, idx) => ({
             univers: q.univers,
             isCorrect: this.userAnswers[idx].isCorrect
