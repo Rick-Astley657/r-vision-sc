@@ -225,7 +225,7 @@ const QuestionBank = [
         "options": [
             "2 positives, 5 négatives",
             "5 positives, 2 négatives",
-            "5 positives, 2 négatives",
+            "5 positives, 8 négatives",
             "8 positives, 5 négatives"
         ],
         "answer": 1
