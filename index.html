@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision ST 4 - Examen Ministériel</title>
+    <!-- Utilisation de la police Inter pour un look minimaliste et moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">ST4<span>Révision</span></div>
+        <div class="controls">
+            <button id="btn-sound" class="icon-btn" aria-label="Activer/Désactiver le son">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            </button>
+            <button id="btn-theme" class="icon-btn" aria-label="Changer le thème">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button id="btn-formules" class="primary-btn" onclick="app.toggleModal('modal-formules')">Formules et grandeurs</button>
+            <button id="btn-tableau" class="primary-btn" onclick="app.toggleModal('modal-tableau')">Tableau périodique</button>
+        </div>
+    </header>
+
+    <main id="app-content">
+        <!-- VUE: TABLEAU DE BORD -->
+        <section id="view-dashboard" class="view active fade-in">
+            <div class="hero">
+                <h1>Préparez-vous pour l'examen de Science et Technologie.</h1>
+                <p>Sessions ciblées et interactives conformes aux standards ministériels.</p>
+            </div>
+            
+            <div class="dashboard-categories">
+                <h3 class="category-title">Examen Ministériel</h3>
+                <div class="modes-grid">
+                    <div class="mode-card highlight" data-mode="full">
+                        <h2>Examen Complet</h2>
+                        <p>25 questions (Sections A, B, C) avec répartition officielle.</p>
+                        <span class="badge">Recommandé</span>
+                        <button class="start-btn" onclick="app.startQuiz('full')">Commencer</button>
+                    </div>
+                </div>
+
+                <h3 class="category-title" style="margin-top: 2rem;">Pratique par Univers</h3>
+                <div class="modes-grid">
+                    <div class="mode-card" data-mode="materiel">
+                        <h2>Univers matériel</h2>
+                        <p>Focus sur la chimie, l'électricité et les transformations.</p>
+                        <button class="start-btn" onclick="app.startQuiz('materiel')">Pratiquer</button>
+                    </div>
+                    
+                    <div class="mode-card" data-mode="technologique">
+                        <h2>Univers technologique</h2>
+                        <p>Analyse d'objet, liaisons, et mécanismes.</p>
+                        <button class="start-btn" onclick="app.startQuiz('technologique')">Pratiquer</button>
+                    </div>
+
+                    <div class="mode-card" data-mode="terre_espace">
+                        <h2>Terre et espace</h2>
+                        <p>Cycles, hydrosphère, atmosphère et lithosphère.</p>
+                        <button class="start-btn" onclick="app.startQuiz('terre_espace')">Pratiquer</button>
+                    </div>
+                </div>
+
+                <h3 class="category-title" style="margin-top: 2rem;">Pratique par Sections</h3>
+                <div class="modes-grid">
+                    <div class="mode-card" data-mode="sectionA">
+                        <h2>Section A</h2>
+                        <p>Questions à choix multiples.</p>
+                        <button class="start-btn" onclick="app.startQuiz('sectionA')">Pratiquer</button>
+                    </div>
+
+                    <div class="mode-card" data-mode="sectionB">
+                        <h2>Section B</h2>
+                        <p>Questions à réponse courte.</p>
+                        <button class="start-btn" onclick="app.startQuiz('sectionB')">Pratiquer</button>
+                    </div>
+
+                    <div class="mode-card" data-mode="sectionC">
+                        <h2>Section C</h2>
+                        <p>Analyse d'objet technologique (Compteur d'eau).</p>
+                        <button class="start-btn" onclick="app.startQuiz('sectionC')">Pratiquer</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <h3>Votre progression</h3>
+                <div id="user-stats">
+                    <!-- Généré dynamiquement -->
+                </div>
+            </div>
+        </section>
+
+        <!-- VUE: QUIZ -->
+        <section id="view-quiz" class="view">
+            <div class="quiz-header">
+                <button class="back-btn" onclick="app.showDashboard()">← Quitter</button>
+                <div class="progress-bar-container">
+                    <div id="quiz-progress-fill" class="progress-fill"></div>
+                </div>
+                <span id="quiz-counter">1 / 25</span>
+            </div>
+            
+            <div id="quiz-container" class="quiz-container">
+                <!-- Question générée dynamiquement ici -->
+            </div>
+            
+            <div class="quiz-footer">
+                <button id="btn-prev" class="primary-btn" onclick="app.prevQuestion()">← Précédent</button>
+                <div class="quiz-footer-center">
+                    <button id="btn-submit" class="primary-btn large" onclick="app.submitAnswer()">Soumettre</button>
+                    <button id="btn-finish" class="primary-btn large hidden" style="background-color: var(--danger-color); color: white;" onclick="app.finishQuiz()">Terminer l'examen</button>
+                </div>
+                <button id="btn-next" class="primary-btn" onclick="app.nextQuestion()">Suivant →</button>
+            </div>
+        </section>
+        
+        <!-- VUE: RÉSULTATS -->
+        <section id="view-results" class="view text-center">
+            <h1>Examen Terminé</h1>
+            <div class="score-display">
+                <span id="final-score">0</span>%
+            </div>
+            <div id="score-details" class="score-details">
+                <!-- Détails par univers -->
+            </div>
+            <button class="primary-btn large" onclick="app.showDashboard()">Retour au tableau de bord</button>
+        </section>
+    </main>
+
+    <!-- MODAL: FORMULES -->
+    <div id="modal-formules" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Formules et grandeurs</h2>
+                <button class="close-btn" onclick="app.toggleModal('modal-formules')">&times;</button>
+            </div>
+            <div class="modal-body" id="formules-body">
+                <!-- Contenu généré par js/data/aide-memoire.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: TABLEAU PÉRIODIQUE -->
+    <div id="modal-tableau" class="modal" style="max-width: 95%;">
+        <div class="modal-content" style="max-width: 100%;">
+            <div class="modal-header">
+                <h2>Tableau de la classification périodique</h2>
+                <button class="close-btn" onclick="app.toggleModal('modal-tableau')">&times;</button>
+            </div>
+            <div class="modal-body" id="tableau-body">
+                <!-- Contenu généré par js/data/aide-memoire.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/data/aide-memoire.js"></script>
+    <script src="js/data/questions.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/svg-interactivity.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
